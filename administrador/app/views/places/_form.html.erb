@@ -1,0 +1,57 @@
+<%= form_with(model: place, local: true) do |form| %>
+  <% if place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(place.errors.count, "error") %> prohibited this place from being saved:</h2>
+
+      <ul>
+      <% place.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :clima %>
+    <%= form.text_field :clima %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tarifa %>
+    <%= form.text_field :tarifa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :datos %>
+    <%= form.text_area :datos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ubicacion %>
+    <%= form.text_field :ubicacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foto %>
+    <%= form.text_area :foto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aceptado %>
+    <%= form.check_box :aceptado %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
