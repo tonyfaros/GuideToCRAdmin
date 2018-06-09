@@ -27,6 +27,7 @@ RailsAdmin.config do |config|
       warden.authenticate! scope: :user
     end
     config.current_user_method(&:current_user)
+    config.main_app_name { ['My App', 'Admin'] }
   end
 
   config.actions do

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   #devise_for :users do get '/users/sign_in' => 'devise/registrations#new' end
 
-  mount RailsAdmin::Engine => '', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   
   
   root to: "home#index"

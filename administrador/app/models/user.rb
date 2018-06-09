@@ -11,8 +11,6 @@ class User < ApplicationRecord
           
           super && admin?
         end
-
-        def after_sign_up_path_for(resource)
-          '/admin' # Or :prefix_to_your_route
-        end
+        
+        
 end
