@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :usuarios
   devise_for :users
   #devise_for :users do get '/users/sign_in' => 'devise/registrations#new' end
 
