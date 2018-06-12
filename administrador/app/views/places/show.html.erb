@@ -31,8 +31,13 @@
 </p>
 
 <p>
-  <strong>Provincia:</strong>
-  <%= @place.provincia %>
+  <strong>Foto:</strong>
+  <%= @place.foto %>
+</p>
+
+<p>
+  <strong>Aceptado:</strong>
+  <%= @place.aceptado %>
 </p>
 
 <p>
@@ -41,13 +46,8 @@
 </p>
 
 <p>
-  <strong>Foto:</strong>
-  <%= @place.foto %>
-</p>
-
-<p>
-  <strong>Aceptado:</strong>
-  <%= @place.aceptado %>
+  <strong>Provincia:</strong>
+  <%= @place.provincia %>
 </p>
 
 <%= link_to 'Edit', edit_place_path(@place) %> |

@@ -11,10 +11,10 @@
       <th>Descripcion</th>
       <th>Datos</th>
       <th>Ubicacion</th>
-      <th>Provincia</th>
-      <th>Categoria</th>
       <th>Foto</th>
       <th>Aceptado</th>
+      <th>Categoria</th>
+      <th>Provincia</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -28,10 +28,10 @@
         <td><%= place.descripcion %></td>
         <td><%= place.datos %></td>
         <td><%= place.ubicacion %></td>
-        <td><%= place.provincia %></td>
-        <td><%= place.categoria %></td>
         <td><%= place.foto %></td>
         <td><%= place.aceptado %></td>
+        <td><%= place.categoria %></td>
+        <td><%= place.provincia %></td>
         <td><%= link_to 'Show', place %></td>
         <td><%= link_to 'Edit', edit_place_path(place) %></td>
         <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>

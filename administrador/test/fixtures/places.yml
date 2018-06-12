@@ -9,6 +9,8 @@ one:
   ubicacion: MyString
   foto: MyText
   aceptado: false
+  categoria: MyString
+  provincia: MyString
 
 two:
   nombre: MyString
@@ -19,3 +21,5 @@ two:
   ubicacion: MyString
   foto: MyText
   aceptado: false
+  categoria: MyString
+  provincia: MyString

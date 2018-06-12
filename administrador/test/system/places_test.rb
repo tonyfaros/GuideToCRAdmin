@@ -15,11 +15,13 @@ class PlacesTest < ApplicationSystemTestCase
     click_on "New Place"
 
     fill_in "Aceptado", with: @place.aceptado
+    fill_in "Categoria", with: @place.categoria
     fill_in "Clima", with: @place.clima
     fill_in "Datos", with: @place.datos
     fill_in "Descripcion", with: @place.descripcion
     fill_in "Foto", with: @place.foto
     fill_in "Nombre", with: @place.nombre
+    fill_in "Provincia", with: @place.provincia
     fill_in "Tarifa", with: @place.tarifa
     fill_in "Ubicacion", with: @place.ubicacion
     click_on "Create Place"
@@ -33,11 +35,13 @@ class PlacesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Aceptado", with: @place.aceptado
+    fill_in "Categoria", with: @place.categoria
     fill_in "Clima", with: @place.clima
     fill_in "Datos", with: @place.datos
     fill_in "Descripcion", with: @place.descripcion
     fill_in "Foto", with: @place.foto
     fill_in "Nombre", with: @place.nombre
+    fill_in "Provincia", with: @place.provincia
     fill_in "Tarifa", with: @place.tarifa
     fill_in "Ubicacion", with: @place.ubicacion
     click_on "Update Place"
